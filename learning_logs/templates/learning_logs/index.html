@@ -1,0 +1,14 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+    <div class='jumbotron'>
+    <h1 class="display-3">Добро пожаловать.</h1>
+
+    <p class="lead">Для записи и ведения заметок, необходимо пройти регистрацию или вйоти в систему,
+        если вы уже сделали это, поздравляю!</p>
+
+    <a class="btn btn-lg btn-primary" href="{% url 'users:register' %}"
+       role="button">Регистрация</a>
+    </div>
+
+{% endblock page_header %}
